@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>POLO Documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shCoreDefault.css" />
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="text-center">
+        <div class="links">
+            <!--			<a target="_blank" href="http://forum.inspiro-themes.com">Support Forum</a>-->
+            <a target="_blank" href="http://support.inspiro-media.com">Support Center</a>
+            <a target="_blank" href="https://youtube.com/inspiromedia/videos">Video Tutorials</a>
+            <a href="#changelog">Template Changelog</a>
+            <a target="_blank" href="http://inspirothemes.com/polo/preview">View Template Demo</a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="header-wrapper">
+            <div class="container text-center" id="hb-header">
+                <a id="logo" href="#"><img rel="Highend" src="img/logo.jpg"></a>
+                <strong>Version:</strong> 1.0 | <strong>Last update:</strong> 29 October 2015
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <ul class="docs-nav">
+                    <li><strong>Introduction</strong></li>
+                    <li><a href="#getting-started" class="cc-active active">Getting Started</a></li>
+                    <li><a href="#html-structure" class="cc-active">HTML Structure</a></li>
+                    <li><a href="#layout-settings" class="cc-active">Layout</a></li>
+                    <li><a href="#page-loader" class="cc-active">Page Loading Transitions</a></li>
+                    <li><a href="#logo-settings" class="cc-active">Logo</a></li>
+                    <li><a href="#color-schemes" class="cc-active">Color Schemes</a></li>
+                    <li><a href="#chaning-fonts" class="cc-active">Fonts</a></li>
+                    <li><a href="#header-topbar" class="cc-active">Header & Topbar</a></li>
+                    <li><a href="#sliders" class="cc-active">Sliders</a></li>
+                    <li><a href="#helpers" class="cc-active">Helper Classes</a></li>
+                    <li><a href="#contact" class="cc-active">Contact Form & Gmap</a></li>
+                    <li><a href="#custom-search" class="cc-active">Search bar</a></li>
+                    <li><a href="#animations" class="cc-active">Animations</a></li>
+                    <li><a href="#icons" class="cc-active">Icons</a></li>
+                    <li><a href="#grid" class="cc-active">Grid</a></li>
+                    <li><a href="#browser-support" class="cc-active">Browser Support</a></li>
+                    <li><a href="#faqs" class="cc-active">FAQs</a></li>
+                    <li><a href="#credits" class="cc-active">Source & Credits</a></li>
+                    <li><a href="#changelog" class="cc-active">Changelog</a></li>
+
+
+                </ul>
+                <div class="docs-content">
+                    <div class="docs-content-inner" id="docs-start-less">
+                        <section id="getting-started">
+                            <h1>Introduction</h1>
+                            <p>Thank you for purchasing Polo template!</p>
+                            <p> This documentation will give you an understanding of how POLO is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us in our Support Portal <a href="http://support.inspiro-media.com/">http://support.inspiro-media.com/</a> </p>
+                            <p>If you need custom customization, please contact us from here: <a href="http://themeforest.net/user/inspiromedia">http://themeforest.net/user/inspiromedia</a></p>
+                            <p>Thank you so much!</p>
+                            <p>INSPIRO</p>
+                            <p>&nbsp;</p>
+                            <h1 id="Installation">Getting Started</h1>
+                            <h4>What's Included</h4>
+                            <p>Once you have download the package you will see the following folder structure in "<strong>template</strong>" Folder</p>
+
+                            <div id="default-tree">
+                                <ul>
+                                    <li><strong>css</strong> - Main Stylesheet Files</li>
+
+                                    <li><strong>images </strong>- Images Files</li>
+                                    <li><strong>js</strong> - Javacripts Folder</li>
+                                    <li><strong>include</strong> - PHP/Ajax Files</li>
+                                    <li><strong>vendor</strong> - Vendor Files (jquery, bootstrap etc)</li>
+                                    <li><strong>audio</strong> - Audio Files</li>
+                                </ul>
+                            </div>
+                            <p>
+                                In order to use in your website, you need to upload template files (<strong>inside the folder www</strong>) to your web server with the help of one of the FTP-clients (for example, WinSCP or Total Commander etc).
+                            </p>
+                            <p>
+                                <span class="label label-danger">Note</span> For correct operation of all functions of the template, including AJAX methods and Contact forms, you must upload the template to web-server.
+                            </p>
+                        </section>
+                        <section id="html-structure">
+
+                            <h1>HTML Structure</h1>
+
+                            <p>POLO template is based on Bootstrap Framework (<a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                            <p>Below is a sample coding structure:</p>
+                            <pre class="brush: html;">
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+
+<!-- Page meta, page css, page js files, page title etc... -->
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+	<!-- MAIN WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HEADER -->
+		<header id="header">
+
+			...
+
+		</header>
+		<!-- END: HEADER -->
+
+		<!-- SECTION -->
+		<section>
+				<div class="container">
+					
+					...
+					
+				</div>
+		</section>
+		<!-- END: SECTION -->
+		
+		<!-- FOOTER -->
+		<footer class="background-dark text-grey" id="footer">
+			<div class="footer-content">
+				<div class="container">
+				
+					...
+					
+				</div>
+			</div>
+			<div class="copyright-content">
+				<div class="container">
+				
+					...
+					
+				</div>
+			</div>
+		</footer>
+		<!-- END: FOOTER -->
+
+	</div>
+	<!-- END: MAIN WRAPPER -->
+	
+	
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+							</pre>
+                        </section>
+                        <section id="layout-style">
+                            <h1>Layout Style</h1>
+                            <p>The template supports two different layout modes, Boxed & Wide Layout. The wide one is the default option, if you want to use the Boxed version, add the following class in the <code>&lt;body&gt;</code> and layout style will be changed to boxed version.</p>
+
+                            <pre class="brush: html;">&lt;body class="boxed"&gt;</pre>
+                        </section>
+
+                        <section id="page-loader">
+                            <h1>Page Loading Transition</h1>
+
+                            <p>Page Loading Transitions are enabled by default. If you wish disable the page loading transition you can simply add this class <code>no-page-loader</code>inside <code>body</code>.
+                            </p>
+                            <p>
+                                <pre class="brush: html;">&lt;body class="no-page-loader"&gt;</pre>
+                            </p>
+                            <br>
+                            <p>Page Loading Transitions can be controled by usuing HTML5 data attirbutes, see the full list of options below:
+
+                                <ul>
+
+                                    <li><code>data-animation-in</code> - Animation effect on page load, default value is <b>fadeIn</b></li>
+                                    <li><code>data-animation-out</code> - Exit Animation effect when page is loaded, default value is <b>fadeOut</b></li>
+                                    <li><code>data-animation-icon</code> - Animted Icon during the page loading, default value is <b>spin.svg</b>. Find the existing SVG Animted icons in /images/svg-loaders/. Simply, if you want to have differnet animated icon, add this attribute in body <code>data-animation-icon="bars.svg"</code>
+                                        <li> Icon list:
+                                            <ul>
+                                                <li>circles.svg</li>
+                                                <li>hearts.svg</li>
+                                                <li>spinning-circles.svg</li>
+                                                <li>bars.svg</li>
+                                                <li>grid.svg</li>
+                                                <li>ball-triangle.svg</li>
+                                                <li>rings.svg</li>
+                                                <li>puff.svg</li>
+                                                <li>three-dots.svg</li>
+                                                <li>audio.svg</li>
+                                                <li>spin.svg</li>
+                                                <li>oval.svg</li>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                    <li><code>data-speed-in</code> - Speed of Animation effect during the page load (in miliseconds), default value is <b>1000</b></li>
+                                    <li><code>data-speed-out</code> - Speed of Exit Animation Effect when page is loaded (in miliseconds), default value is <b>500</b></li>
+                                </ul>
+
+                                <pre class="brush: html;">&lt;body data-animation-in="fadeIn"  data-animation-out="fadeOut" data-animation-icon="bars.svg"  data-speed-in="1000" data-speed-out="500"&gt;</pre>
+
+
+                            </p>
+                            <p>You can create custom link animation by adding this class <code>.animsition-link</code> inside the <code>a</code> tag</p>
+
+
+
+                        </section>
+
+                        <section id="logo-settings">
+                            <h1>Logo Settings</h1>
+
+                            <p>Default site logo is placed inside <code>#header</code> container.</p>
+
+                            <pre class="brush: html;">
+
+							<!-- HEADER -->
+								&lt;header id="header"&gt;
+									<div id="header-wrap">
+										<div class="container">
+
+
+											<!--LOGO-->
+											<div id="logo">
+												<a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
+													<img src="images/logo.png" alt="Polo Logo">
+												</a>
+											</div>
+											<!--END: LOGO-->
+
+
+										</div>
+									</div>
+								&lt;/header&gt;	
+							<!-- END: HEADER -->
+							</pre>
+
+                            <p><span class="label label-danger">Note</span> Maximum height of logo is <strong>90px</strong>. Make you sure you also add
+                                <stron>Dark Logo version</stron>. The dark logo will be shown if the header Scheme is set to dark (example: if header has class .header-dark).</p>
+                            <p><span class="label label-danger">Retina Logo</span> If you wish to use retina logo on your site for high-resolution retina displays, just place in the same direcory a high resolution file with name: logo@2x.png, and for dark version logo-dark@2x.png</p>
+
+                        </section>
+                        <section id="color-schemes">
+
+                            <h1>Color Schemes</h1>
+
+                            <p>This part of the documentation will explain how to change the current Color Scheme of your site, You simply need to include an existing color scheme or change the HEX Color Code in the <code>css/color-variations/custom.css</code> and include inside <code>&lt;head&gt;</code>
+                                <br>
+                                <br>
+                            </p>
+                            <h4>Option 1 Including existin color palete:</h4>
+                            <p>Include inside <code>&lt;head&gt;</code> main template (or any predefined color palete). See example below:</p>
+                            <pre class="brush: html;">
+&lt;head&gt;
+
+	<!-- Template color -->
+	<link href="css/color-variations/blue.css" rel="stylesheet" type="text/css" media="screen">
+	
+
+&lt;/head&gt;
+
+</pre>
+                            <br>
+                            <br>
+                            <h4>Option 2: Changing the HEX Code in custom.css</h4>
+                            <p>Include inside <code>&lt;head&gt;</code> custom color palete from /css/color-variations/custom.css and open an code/text editor simply change the HEX Codes according to your requirements. See example below:</p>
+                            <pre class="brush: html;">
+&lt;head&gt;
+	
+	<!-- Template color -->
+	<link href="css/color-variations/custom.css" rel="stylesheet" type="text/css" media="screen">
+
+&lt;/head&gt;
+
+</pre>
+
+
+
+
+
+                        </section>
+                        <section id="chaning-fonts">
+
+
+                            <h1>Changing Fonts</h1>
+                            <p>By default POLO Template uses Two fonts from google library:<code>Open Sans</code> and <code>Raleway</code> from the <a target="_blank" href="http://www.google.com/fonts">Google Fonts Library</a>
+                            </p>
+                            <p>If you wish to add/change the site fonts, please take a look in the <code>head</code> part of the website and you will find this tag:
+                            </p>
+
+                            <pre class="brush: html">
+
+	<!-- LOAD GOOGLE FONTS -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+</pre> To include new font you can simply add another line like this:
+                            <pre class="brush: html">
+
+	<!-- LOAD GOOGLE FONTS -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,300,800,700,600" rel="stylesheet" type="text/css" />
+</pre>
+
+                            <p>Or add an <code>|</code> seperator and paste <code>Lato:400,300,800,700,600</code> after default website fonts link.</p>
+
+
+                        </section>
+                        <section id="header-topbar">
+                            <h1>Header & Topbar Styles</h1>
+                            <br>
+                            <h4>Header</h4>
+                            <p>Polo has 15 header versions to choose from. Header versions helps you to customize the main header of your website with different styles. We made it really simple to change header styles, by simply changing a class name and your entire header style will change automatically and adopt to any screen.
+                                <br>
+                                <br> Header Light is the default option, if you want to use the Transparent or dark version, add the following class in the <code>&lt;header&gt;</code> and header style will be changed to Transparent Header.</p>
+
+
+                            <pre class="brush: html;">&lt;header class="header-transparent"&gt;</pre>
+
+                            <br> Find below the list of Header Styles:
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:18%">Class</th>
+                                            <th>Class Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>(Empty)</code></td>
+                                            <td>This is the default Header style with white background and dark text color. There is no need to add a class for this version.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-transparent</code></td>
+                                            <td>This class will make header with with transparent background. By default header has text with dark color, in this case if you need to have text & menu with light color, you just need to add also <code>header-dark</code> after <code>header-transparent</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-light</code></td>
+                                            <td>This version of header is almost the same with the default version</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-light-transparent</code></td>
+                                            <td>This class will make header with with light semi transparent background. By default header has text with dark color.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-dark</code></td>
+                                            <td>This class will make header with dark background and light text color</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-dark-transparent</code></td>
+                                            <td>This class will make header with with dark semi transparent background. By default header has text with light color.</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-modern</code></td>
+                                            <td>This class will make Modern floating Header style with white background and dark text color.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-modern .header-dark</code></td>
+                                            <td>These two classes will make Modern floating Header with dark background and light text color.</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-modern .header-dark .header-dark-transparent</code></td>
+                                            <td>These two classes will make Modern floating Header with semi dark background and light text color.</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-modern .header-dark .header-dark-transparent</code></td>
+                                            <td>These two classes will make Modern floating Header with semi dark background and light text color.</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-logo-center</code></td>
+                                            <td>This class on default header version will align logo in center</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-logo-right</code></td>
+                                            <td>This class on default header version will align logo in right position</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-fullwidth</code></td>
+                                            <td>This class will make header to be fullwidth, if you need to be transparent, you can simply add <code>header-transparent</code>, also if you need to be with light color simply add also <code>header-dark</code></td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-static</code></td>
+                                            <td>This class will make header to be as a static, when you scroll page the header size remain same.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-no-sticky</code></td>
+                                            <td>This class will disable sticky header, when you scroll page the header remain at top.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>.header-mini</code></td>
+                                            <td>This class will make header to be as a mini version, similar as the sticky header when you scroll your page.</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>Below slider (not class)</code></td>
+                                            <td>You can add any of the above header styles under the slider in order to make it the header below slider. Simply grab the <code>&lt;header&gt; ... &lt;/header&gt;</code> below <code>&lt;div id="slider"&gt; ... &lt;/div&gt;</code> </td>
+
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+
+                            <h4>Topbar</h4>
+
+                            <p>Polo has 4 Topbar versions to choose from. Topbar versions helps you to customize the main Topbar of your website with different styles. We made it really simple to change Topbar styles, by simply changing a class name and your entire Topbar style will change automatically and adopt to any screen.
+                                <br>
+                                <br> Topbar Light is the default option, if you want to use the Transparent or dark version, add the following class in the <code>&lt;div id="topbar"&gt;</code> and Topbar style will be changed to Transparent Topbar.</p>
+
+
+                            <pre class="brush: html;">&lt;div id="topbar" class="topbar-transparent"&gt;</pre>
+
+                            <br>Find below the list of Topbar Styles:
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:18%">Class</th>
+
+                                            <th>Class Description</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>(Empty)</code></td>
+                                            <td>This is the default Topbar style with white background and dark text color. There is no need to add a class for this version.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><code>.topbar-transparent</code></td>
+                                            <td>This class will make Topbar with with transparent background. By default Topbar has text with dark color, in this case if you need to have text with light color, you just need to add also <code>topbar-dark</code> after <code>topbar-transparent</code>, see code on next colum</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><code>.topbar-dark</code></td>
+                                            <td>This class will make Topbar with with dark background and light text color</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><code>.topbar-colored</code></td>
+                                            <td>This class will make Topbar with with colored background. By default Topbar has text with dark color, in this case if you need to have text with light color, you just need to add also <code>topbar-dark</code> after <code>topbar-colored</code>, see code on next colum</td>
+
+                                        </tr>
+
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+                        <section id="sliders">
+
+
+                            <h1>Sliders</h1>
+                            <p>POLO includes 5 different sliders that gives you all the options they need.
+                                <ul>
+                                    <li><strong>Revolution Slider:</strong> is an awesome animated slider that creates eye-catching sliders.</li>
+                                    <li><strong>Owl Slider:</strong> Is an touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.</li>
+                                    <li><strong>Polo Owl Slider:</strong> is an elegant slider perfect for large images and subtle animated titles and captions.</li>
+                                    <li><strong>Text Rotator:</strong> An simply text rotator that, creates small or large pieces of text one after the other, just like a slider does with images... This is a great tool for displaying catch phrases, mission statements, tag lines, and so on.</li>
+                                    <li><strong>Vegas Slideshow:</strong> Vegas is a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements.</li>
+                                </ul>
+
+                            </p>
+
+                            <br>
+                            <br>
+                            <h4>Revolution Slider</h4>
+                            <p>Please find the full online documentation of Revolution Slider <a href="http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">here</a>
+                            </p>
+                            <br>
+                            <br>
+                            <h4>Owl Slider</h4>
+                            <p>This excellent carousel slider can be controled usuing HTML5 data attirbutes, see the full list below:
+
+                                <ul>
+                                    <li><code>data-carousel-col</code> - The columns in large desktop screen size, default value is 4 columns</li>
+                                    <li><code>data-carousel-col-md</code> - The columns in laptop screen size, default value is 4 columns</li>
+                                    <li><code>data-carousel-col-sm</code> - The columns in tablet screen size, default value is 3 columns</li>
+                                    <li><code>data-carousel-col-xs</code> - The columns in mobile screen size, default value is 1 columns</li>
+                                    <li><code>data-carousel-margins</code> - Set space margins of elements, default value is 20 (20 pixels)</li>
+                                    <li><code>data-carousel-dots</code> - Use dots nativation, default value <strong>"false"</strong> in this case defult navigation are arrows in left and right.</li>
+                                    <li><code>data-carousel-autoplay</code> - Autplay slider, default value <strong>"false"</strong></li>
+                                    <li><code>data-carousel-video</code> - Video slider, if you need to place video in slider you need to set this option to <strong>"true"</strong></li>
+                                </ul>
+
+
+                            </p>
+                            <p>The full documentation of OWl Slider can be found <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">here</a></p>
+
+                            <br>
+                            <br>
+                            <h4>Polo Owl Slider</h4>
+                            <p>You can easily add background images and text caption inside in Polo Owl Slider. You can also simply add inside <code>&lt;div id="slider"&gt;...&lt;/div&gt;</code> if you need it to be as a first slider of your website.</p>
+
+                            <p>The HTML Structure of POLO Owl Slider is shown below: </p>
+                            <pre class="brush: html">
+					
+								<!-- SLIDER -->
+								<div id="slider-carousel" class="boxed-slider">
+										
+										<!-- Slide 1 & background image -->
+										<div style="background-image:url('homepages/shop-v3/images/1.jpg');" class="owl-bg-img">
+										
+											<div class="container-fullscreen">
+												<div class="text-middle">
+													<div class="container">
+													
+														<!-- slider content -->
+														<div class="text-right slider-content">
+															<h2 class="text-large m-b-0">THE MOST<br />POPULAR BRAND</h2>
+															<a class="button border rounded" href="PURCHASE LINK">View Collection</a>
+														</div>
+														<!-- end of slider content -->
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of Slide 1 & background image -->
+										
+										<!-- Slide 2 & background image -->
+										<div style="background-image:url('homepages/shop-v3/images/2.jpg');" class="owl-bg-img">
+
+											<div class="container-fullscreen">
+												<div class="text-middle">
+													<div class="container">
+														
+														<!-- slider content -->
+														<div class="slider-content">
+															<h2 class="text-large m-b-0">BIG SALE<br />UP TO 50%</h2>
+															<a class="button border rounded" href="#">Shop Now</a>
+														</div>
+														<!-- end of slider content -->
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of Slide 2 & background image -->
+										
+								</div>
+								<!-- END: SLIDER -->
+		
+							</pre>
+
+                            <p>The full documentation of OWl Slider can be found <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">here</a></p>
+
+
+
+                            <br>
+                            <br>
+                            <h4>Text Rotator</h4>
+                            <p>Text Rotator can be controlled using HTML5 data attirbutes, see the full list below:
+
+                                <ul>
+                                    <li><code>data-rotate-separator</code> - Value of phrases seperator. Default value is "<code>,</code>" You can change this value as you wish. Simply by adding an <code>|</code> or <code>/</code></li>
+                                    <li><code>data-rotate-effect</code> - The [in] animation type. Refer to <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a> for a list of available animations. Default value is <code>flipInX</code></li>
+                                    <li><code>data-rotate-speed</code> - The delay between the changing of each phrase in milliseconds. Default value is <code>2000</code></li>
+                                </ul>
+
+
+                            </p>
+
+                            <p>Encapsulate your rotating phrases in an element and separate each phrase with a comma or a separator of your choice:</p>
+                            <pre class="brush: html">
+							<h2>LIFE IS<span class="text-rotator" data-rotate-effect="fadeIn" data-rotate-speed="3000">FITNESS, TO BE STRONG, TO BE FIT </span></h2>
+							</pre>
+
+                            <p>The full documentation of Morphext can be found <a href="https://github.com/MrSaints/Morphext" target="_blank">here</a></p>
+
+                            <br>
+                            <br>
+                            <h4>Vegas SlideShow</h4>
+                            <p>You can easily add animated background images to any element in your website. Simply place initialize code with ID of your target.
+                                <br> Below is an example:
+
+                            </p>
+
+                            <pre class="brush: js">
+								$(function() {
+									$('body').vegas({
+										slides: [
+											{ src: 'img1.jpg' },
+											{ src: 'img2.jpg' },
+											{ src: 'img3.jpg' }
+										]
+									});
+								});
+							</pre> Then the default target is <code>body</code>
+                            <br>
+                            <br> If you wish to add in specific element you can simply use this code below:
+                            <pre class="brush: html"><div id="vegas-slideshow">...</div></pre> Javascript code:
+                            <pre class="brush: js">
+								$(function() {
+									$('#vegas-slideshow').vegas({
+										slides: [
+											{ src: 'img1.jpg' },
+											{ src: 'img2.jpg' },
+											{ src: 'img3.jpg' }
+										]
+									});
+								});
+							</pre>
+
+                            <p>The full documentation of Vegas Slideshow can be found at <a href="https://github.com/jaysalvat/vegas" target="_blank">https://github.com/jaysalvat/vegas</a></p>
+
+
+
+                            <br>
+                            <br>
+
+                            <h3>Slider Helpers Classes</h3>
+
+                            <p>Find below list of css class helpers of sliders:</p>
+
+                            <ul>
+                                <li><code>.fullscreen</code> - This class makes the Slider Full Screen.</li>
+                                <li><code>.halfscreen</code> - This class change heigh of the slider to 1/2 of the screen. This class can be usued typically for fullwidth sliders.</li>
+                            </ul>
+
+
+
+                        </section>
+                        <section id="helpers">
+                            <h1>Helpers</h1>
+                            <br>
+                            <p>Polo helper css classes allow you to build your custom layout without touching any CSS code</p>
+                            <p>These classes are generic helper classes predifined in the CSS of pages, here is quick view what they can do</p>
+                            <ul class="fs-13 p-l-25">
+                                <li><strong>Set margins</strong> - Available for all directions from 0 - 150 px stepping value 5px </li>
+                                <li><strong>Set padding</strong> - Available for all directions from 0 - 150 px stepping value 5px </li>
+                                <li><strong>Set text color</strong> - Navigate below to table of Text Color to view the avaliable predefined classes</li>
+                                <li><strong>Set text size</strong> - Navigate below to table of Text Sizes to view the avaliable predefined classes</li>
+                                <li><strong>Set text align</strong> - Navigate below to table of Text Align to view the avaliable predefined classes</li>
+                                <li><strong>Set font weight</strong> - Navigate below to table of Font Weight to view the avaliable predefined classes</li>
+                            </ul>
+
+                            <br>
+                            <br>
+                            <h4>Margins</h4>
+                            <p>You can add this helper class to any element in your HTML code to set Margins</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                First Prefix ( m-*)
+                                            </th>
+                                            <th>
+                                                Second Prefix(m-t/b/l/r-*)
+                                            </th>
+                                            <th>
+                                                Last Prefix(m-t-$value)
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>m for margin</td>
+                                            <td>t : top, b : bottom, l : left, r : right</td>
+                                            <td>5,10,15,20, ... 150</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>example :</p>
+                            <code>m-t-10</code> <span>which means Margin Top 10px</span>
+                            <br>
+                            <code>m-b-20</code> <span>which means Margin Bottom 20px</span>
+                            <br>
+                            <code>m-l-5</code> <span>which means Margin Left 5px</span>
+                            <br>
+                            <code>m-r-35</code> <span>which means Margin Right 35px</span>
+                            <br>
+                            <p>
+                                <label class="label label-danger">Note:</label> Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15</p>
+                            <p>Other options:</p>
+                            <p>To remove margin from a HTML element add the class <code>no-margin</code></p>
+                            <br>
+                            <br>
+                            <h4>Paddings</h4>
+                            <p>You can add this helper class to any element in your HTML code to set paddings</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                First Prefix ( p-*)
+                                            </th>
+                                            <th>
+                                                Second Prefix(p-t/b/l/r-*)
+                                            </th>
+                                            <th>
+                                                Last Prefix(p-t-$value)
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>p for padding</td>
+                                            <td>t : top, b : bottom, l : left, r : right</td>
+                                            <td>5,10,15,20, ... 150</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>example :</p>
+                            <code>p-t-10</code> <span>which means padding Top 10px</span>
+                            <br>
+                            <code>p-b-20</code> <span>which means padding Bottom 20px</span>
+                            <br>
+                            <code>p-l-5</code> <span>which means padding Left 5px</span>
+                            <br>
+                            <code>p-r-35</code> <span>which means padding Right 35px</span>
+                            <br>
+                            <p>
+                                <label class="label label-danger">Note:</label> Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15</p>
+                            <p>Other options:</p>
+                            <p>To remove padding from a HTML element add the class <code>no-padding</code></p>
+                            <br>
+                            <br>
+                            <h4>Text sizes</h4>
+                            <p>You can add this helper class to any element in your HTML code to set text size & style</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Text size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                        <tr>
+                                            <td><code>text-medium</code></td>
+                                            <td> font-size: 50px !important; font-weight: 800; line-height: 1.1; margin-bottom: 20px; </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>text-large</code></td>
+                                            <td> font-size: 90px !important; line-height: 110px !important; font-weight: 800 !important; </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-extra-large</code></td>
+                                            <td> font-size: 120px !important; font-weight: 800; line-height: 120px; </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-lg</code></td>
+                                            <td> color: #ffffff; font-size: 130px; line-height: 120px; font-weight: 800; </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-lg-x2</code></td>
+                                            <td> color: #ffffff; font-size: 230px; line-height: 250px; font-weight: 100; </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-small</code></td>
+                                            <td> font-size: 16px !important; font-weight: 800; line-height: 1.1; </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>text-medium-light</code></td>
+                                            <td> font-size: 50px !important; font-weight: 100; line-height: 1.1; </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-large-light</code></td>
+                                            <td> font-size: 90px !important; line-height: 100px !important; font-weight: 120 !important; </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <h4>Text Colors</h4>
+                            <p>You can add this helper class to any element in your HTML code to set text color</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Text</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-orange
+									</code></td>
+                                            <td>color: #f58a5c;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-green
+									</code></td>
+                                            <td>color: #1fbba6;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-blue
+									</code></td>
+                                            <td>color: #5f8295;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-pink
+									</code></td>
+                                            <td>color: #dd5a82;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-purple
+									</code></td>
+                                            <td>color: #dd5a82;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-bricky
+									</code></td>
+                                            <td>color: #894550;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-yellow
+									</code></td>
+                                            <td>color: #ffb848;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-red
+									</code></td>
+                                            <td>color: #e66b6b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-white
+									</code></td>
+                                            <td>color: white;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-dark
+									</code></td>
+                                            <td>color: rgba(44, 47, 59, 0.4);</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-light
+									</code></td>
+                                            <td>color: rgba(255, 255, 255, 0.6);</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <h4>Text Align</h4>
+                            <p>You can add this helper class to any element in your HTML code to set text align</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Text</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-left
+									</code></td>
+                                            <td>text-align: left;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-right
+									</code></td>
+                                            <td>text-align: right;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-center
+									</code></td>
+                                            <td>text-align: center;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <h4>Font Weight</h4>
+                            <p>You can add this helper class to any element in your HTML code to set font weight</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Font Weight</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <code>
+										.text-bold
+									</code></td>
+                                            <td>font-weight: bold;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-100
+									</code></td>
+                                            <td>
+                                                font-weight: 100 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-300
+									</code></td>
+                                            <td>
+                                                font-weight: 300 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-400
+									</code></td>
+                                            <td>
+                                                font-weight: 400 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-500
+									</code></td>
+                                            <td>
+                                                font-weight: 500 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-600
+									</code></td>
+                                            <td>
+                                                font-weight: 600 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-700
+									</code></td>
+                                            <td>
+                                                font-weight: 700 !important;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>font-wight-800
+									</code></td>
+                                            <td>
+                                                font-weight: 800 !important;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </section>
+                        <section id="contact">
+
+                            <h1>Contact form & Google Maps</h1>
+                            <br>
+                            <br>
+                            <h4>Contact form</h4>
+                            <p>You need to modify email address on <code>contactForm.php</code>, line 5</p>
+                            <pre class="brush: html">$to = "info@yourdomain.com";
+</pre>
+                            <p>with your or company contact email address.</p>
+                            <p>
+                                <labe class="label label-danger">Note:</labe> Your server must support php send <code>mail()</code> function to make contact form work properly.</p>
+
+                            <br>
+                            <br>
+
+                            <h4>Contact map</h4>
+                            <p>You can create unlimited contact maps in your website. Simply by using HTML5 data attirbutes, follow list below:
+
+                                <ul>
+                                    <li><code>data-map-address</code> - Add location address</li>
+                                    <li><code>data-map-zoom</code> - Map zoom size</li>
+                                    <li><code>data-map-type</code> The <code>maptype</code> has to be set as an <strong>string</strong> and can be set to any of these values: <code>HYBRID</code>, <code>TERRAIN</code>, <code>SATELLITE</code> or <code>ROADMAP</code></li>
+                                    <li><code>data-map-icon</code> We have created six markers for your website, you can find them in /images/markers. If you wish your custom image marker you can do that, just by placing your custom marker url in <code>data-map-icon </code></li>
+
+
+                                    <p>An example, how to create Google Maps inside your website:</p>
+                                </ul>
+
+
+                            </p>
+
+                            <pre class="brush: html">
+								
+								<!-- Google map sensor -->
+								<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+	
+								<div class="map" data-map-address="Melburne, Australia" data-map-zoom="10" data-map-icon="images/markers/marker1.png" data-map-type="ROADMAP" ></div>
+
+						
+</pre>
+
+                            <p>
+                                <labe class="label label-danger">Note:</labe> You need always to include Google map sensor link in your page <code>head</code> or before your placed map. you can set the <code>sensor</code> parameter to <code>true</code> or <code>false</code> to detect the user's location.
+                            </p>
+                        </section>
+                        <section id="custom-search">
+
+                            <h1>Search bar & Google custom search engine</h1>
+                            <p>If you allready have a google custom search engine created for your page, skip to step 2 (Search result page)</p>
+                            <br>
+                            <br>
+                            <h4>How to create a google custom search engine</h4>
+
+                            <ul>
+                                <li>Login with your google account to <a href="http://www.google.com/cse/">http://www.google.com/cse/ </a> </li>
+                                <li>On the Google Custom Search home page, click New search engine.</li>
+                                <li>In the Sites to search section, add the pages you want to include in your search engine. You can include any sites you want, not just sites you own. You can include site URLs or page URLs, and you can also get fancy and use URL patterns. The name of your search engine will be automatically generated based on the URLs you select. You can change this name at any time.</li>
+
+                                <li>Select the language of your search engine. This defines the language of the buttons and other design elements of your search engine, but doesn't affect the actual search results.</li>
+
+                                <li>Click Create.</li>
+
+                                <li>To add your search engine to your site, click Get Code on the next page. Copy the code and paste it into your site wherever you want your Custom Search Engine to appear.</li>
+                            </ul>
+                            <br>
+                            <br>
+
+
+
+                            <h4>Search result page</h4>
+                            <p>Open <code>search-results-page.html</code> with an code/text editor, go to line 668 and add place google custom search code inside <code>&lt;div class="container"&gt;...&lt;/div&gt;</code></p>
+
+                            <p>An example, how the Google Custom Search page should look like:</p>
+
+
+
+                            <pre class="brush: js">
+								
+								<!-- SEARCH RESULTS -->
+								<section>
+									<div class="container">
+										&lt;script&gt;
+											(function() {
+												var cx = '002076313563808096837:eapq2teawdc';
+												var gcse = document.createElement('script');
+												gcse.type = 'text/javascript';
+												gcse.async = true;
+												gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+													'//cse.google.com/cse.js?cx=' + cx;
+												var s = document.getElementsByTagName('script')[0];
+												s.parentNode.insertBefore(gcse, s);
+											})();
+
+										&lt;/script&gt;
+										&lt;gcse:searchresults-only&gt;&lt;/gcse:searchresults-only&gt;
+									</div>
+								</section>
+								<!-- END: SEARCH RESULTS -->
+						</pre>
+
+                            <p>
+                                <labe class="label label-danger">Note:</labe> You must have google account to create custom google search engine on your site.</p>
+                        </section>
+                        <section id="animations">
+                            <h1>Animations</h1>
+                            <p>You can easily add animations to any elements in your website. Animations can be shown on scroll appear and on click action for Out effect.</p>
+
+                            <p><strong>Example:</strong></p>
+
+                            <pre class="brush: html">&lt;div data-animation="fadeInUp" data-animation-delay="200"&gt;
+...
+&lt;/div&gt;
+</pre>
+                            <p>
+                                <labe class="label label-danger">Note:</labe> Animation delay (<code>data-animation-delay</code>) is in miliseconds, example 1 second = 1000 miliseconds! It can be empty, default value is: 200 miliseconds</p>
+
+                            <br>
+                            <p>The animation can be set to:</p>
+                            <ul>
+                                <li>bounce</li>
+                                <li>flash</li>
+                                <li>pulse</li>
+                                <li>rubberBand</li>
+                                <li>shake</li>
+                                <li>swing</li>
+                                <li>tada</li>
+                                <li>wobble</li>
+                                <li>bounceIn</li>
+                                <li>bounceInDown</li>
+                                <li>bounceInLeft</li>
+                                <li>bounceInRight</li>
+                                <li>bounceInUp</li>
+                                <li>bounceOut</li>
+                                <li>bounceOutDown</li>
+                                <li>bounceOutLeft</li>
+                                <li>bounceOutRight</li>
+                                <li>bounceOutUp</li>
+                                <li>fadeIn</li>
+                                <li>fadeInDown</li>
+                                <li>fadeInDownBig</li>
+                                <li>fadeInLeft</li>
+                                <li>fadeInLeftBig</li>
+                                <li>fadeInRight</li>
+                                <li>fadeInRightBig</li>
+                                <li>fadeInUp</li>
+                                <li>fadeInUpBig</li>
+                                <li>fadeOut</li>
+                                <li>fadeOutDown</li>
+                                <li>fadeOutDownBig</li>
+                                <li>fadeOutLeft</li>
+                                <li>fadeOutLeftBig</li>
+                                <li>fadeOutRight</li>
+                                <li>fadeOutRightBig</li>
+                                <li>fadeOutUp</li>
+                                <li>fadeOutUpBig</li>
+                                <li>flip</li>
+                                <li>flipInX</li>
+                                <li>flipInY</li>
+                                <li>flipOutX</li>
+                                <li>flipOutY</li>
+                                <li>lightSpeedIn</li>
+                                <li>lightSpeedOut</li>
+                                <li>rotateIn</li>
+                                <li>rotateInDownLeft</li>
+                                <li>rotateInDownRight</li>
+                                <li>rotateInUpLeft</li>
+                                <li>rotateInUpRight</li>
+                                <li>rotateOut</li>
+                                <li>rotateOutDownLeft</li>
+                                <li>rotateOutDownRight</li>
+                                <li>rotateOutUpLeft</li>
+                                <li>rotateOutUpRight</li>
+                                <li>hinge</li>
+                                <li>rollIn</li>
+                                <li>rollOut</li>
+                                <li>zoomIn</li>
+                                <li>zoomInDown</li>
+                                <li>zoomInLeft</li>
+                                <li>zoomInRight</li>
+                                <li>zoomInUp</li>
+                                <li>zoomOut</li>
+                                <li>zoomOutDown</li>
+                                <li>zoomOutLeft</li>
+                                <li>zoomOutRight</li>
+                                <li>zoomOutUp</li>
+                            </ul>
+                        </section>
+                        <section id="icons">
+                            <h1>Icons font</h1>
+                            <br>
+                            <p>We have included font awesome icon fonts in Polo template. A complete list of icons along with the class names can be found here: <a href="http://fontawesome.io/ ">http://fontawesome.io/ </a></p>
+
+
+
+                            <p>You can place Font Awesome icons just about anywhere using the CSS Prefix <code>fa</code> and the icon's name. Font Awesome is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).
+                            </p>
+
+                            <p>Please see below exmaple code:</p>
+                            <pre class="brush: html"><i class="fa fa-heart"></i></pre>
+
+                            <p>
+                                <labe class="label label-danger">Note:</labe> To increase icon sizes relative to their container, use the fa-lg (33% increase), fa-2x, fa-3x, fa-4x, or fa-5x classes.</p>
+                        </section>
+                        <section id="grid">
+                            <h1>
+Grid
+</h1>
+                            <p>
+                                Bootstrap grid includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts
+                            </p>
+                            <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+                            <ul>
+                                <li>You must start with <code>row</code></li>
+                                <li>There are pre-define classes of columns starting from 1 to 12, example <code>col-md-1</code> to <code>col-md-12</code></li>
+                                <li>Each of these value represent a percentage of the screen, 1 being the smallest and 12 being 100%</li>
+                                <li>You can create different grid pattern that finally forms 12 </li>
+                            </ul>
+                            <p>For more information about Bootstrap, visit: <a href="http://getbootstrap.com/"> http://getbootstrap.com/</a></p>
+                            <p>
+                                example :
+                            </p>
+                            <pre class="brush: html;"><div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div></pre>
+                            <br>
+                            <p><span class="label label-danger">Note</span> Bootstrap includes different grids for different screen sizes, "col-md" md stands for medium screen, the following table explains: </p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                Extra small devices
+                                                <small>Phones (&lt;768px)</small>
+                                            </th>
+                                            <th>
+                                                Small devices
+                                                <small>Tablets (≥768px)</small>
+                                            </th>
+                                            <th>
+                                                Medium devices
+                                                <small>Desktops (≥992px)</small>
+                                            </th>
+                                            <th>
+                                                Large devices
+                                                <small>Desktops (≥1200px)</small>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-nowrap">Grid behavior</th>
+                                            <td>Horizontal at all times</td>
+                                            <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Container width</th>
+                                            <td>None (auto)</td>
+                                            <td>750px</td>
+                                            <td>970px</td>
+                                            <td>1170px</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Class prefix</th>
+                                            <td><code>.col-xs-</code></td>
+                                            <td><code>.col-sm-</code></td>
+                                            <td><code>.col-md-</code></td>
+                                            <td><code>.col-lg-</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap"># of columns</th>
+                                            <td colspan="4">12</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Column width</th>
+                                            <td class="text-muted">Auto</td>
+                                            <td>~62px</td>
+                                            <td>~81px</td>
+                                            <td>~97px</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Gutter width</th>
+                                            <td colspan="4">30px (15px on each side of a column)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Nestable</th>
+                                            <td colspan="4">Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Offsets</th>
+                                            <td colspan="4">Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap">Column ordering</th>
+                                            <td colspan="4">Yes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+                        <section id="browser-support">
+
+                            <h1>Browser Support</h1>
+
+                            <p>POLO is built keeping mind to support a wide range of browsers and devices. We all major browers Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+                            <p></p>
+
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <td></td>
+                                            <th>Chrome</th>
+                                            <th>Firefox</th>
+                                            <th>Internet Explorer</th>
+                                            <th>Opera</th>
+                                            <th>Safari</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Android</th>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+                                            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                                            <td class="text-muted">N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>iOS</th>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-muted">N/A</td>
+                                            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Mac OS X</th>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Windows</th>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
+                                            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section id="faqs">
+                            <h1>FAQS</h1>
+                            <ol>
+                                <li>
+                                    <strong>Why there are no images that were in live demo? </strong>
+                                    <br>All images are only for demonstration purpose, however you can re-download them in sites we have listed in Credits section.
+                                    <br>
+                                    <br>
+                                </li>
+
+                                <li>
+                                    <strong>Why some videos might not work?</strong>
+                                    <br> Ajax methods of Jquery are used for some videos and they can work only on the real server. For the correct operation of all functions, upload your website on a real server.
+                                    <br>
+                                    <br>
+                                </li>
+                                <li>
+                                    <strong>Why contact form may doesn’t work?</strong>
+                                    <br> For the correct operation of contact form, the php support is necessary. Upload your website on a server with support of PHP and PHP mail() function.
+                                    <br>
+                                    <br>
+                                </li>
+
+                            </ol>
+                        </section>
+                        <section id="credits">
+
+                            <h1>Source & Credits</h1>
+                            <p>All images are only for demonstration purpose, however you can re-download them in sites below. Almost all (not including overclothing.com, Daniel Zenda, Freepik etc...) images are released free of copyrights under Creative Commons CC0.</p>
+                            <br>
+                            <br>
+                            <h4>Images & Mockups</h4>
+
+
+                            <ul>
+                                <li>All Free Stocks <a target="_blank" href="allthefreestock.com">http://allthefreestock.com</a></li>
+                                <li>The Stocks <a target="_blank" href="http://thestocks.im/">http://thestocks.im/</a></li>
+                                <li>Unsplash <a target="_blank" href="http://unsplash.com/">http://unsplash.com/</a></li>
+                                <li>Graphic Burger <a target="_blank" href="http://graphicburger.com">http://graphicburger.com</a></li>
+                                <li>Gratisography <a target="_blank" href="http://www.gratisography.com/">http://www.gratisography.com/</a></li>
+                                <li>Placeit <a target="_blank" href="https://placeit.net/c/people">https://placeit.net/c/people</a></li>
+                                <li>ImmagiPic <a target="_blank" href="http://www.immagipic.com/">http://www.immagipic.com/</a></li>
+                                <li>Graphberry<a target="_blank" href="http://www.graphberry.com">http://www.graphberry.com</a></li>
+
+
+                                <li>Pixabay <a target="_blank" href="https://www.pixabay.com/"> https://www.pixabay.com/</a></li>
+                                <li>Pexels <a target="_blank" href="https://www.pexels.com/"> https://www.pexels.com/</a></li>
+                                <li>Polygon Background <a target="_blank" href="http://blog.spoongraphics.co.uk/freebies/20-free-high-res-geometric-polygon-backgrounds"> http://blog.spoongraphics.co.uk/freebies/20-free-high-res-geometric-polygon-backgrounds</a></li>
+
+                                <li>Patterns <a target="_blank" href="http://subtlepatterns.com/">http://subtlepatterns.com/</a></li>
+                                <li>Daniel Zenda <a target="_blank" href="https://www.flickr.com/photos/astragony/">https://www.flickr.com/photos/astragony/</a></li>
+
+                                <li>OVER Clothing <a target="_blank" href="https://overclothing.com/">https://overclothing.com/</a></li>
+                                <li>APP Concept (App Showcase) <a target="_blank" href="https://dribbble.com/shots/2056410-Let-s-Cook-Recipe-App-Design-Concept-Free-PSDs?list=searches">https://dribbble.com/shots/2056410-Let-s-Cook-Recipe-App-Design-Concept-Free-PSDs?list=searches</a></li>
+                                <li>Bakery Icons
+                                    <a href="http://www.freepik.com/free-photos-vectors/cake">Cake vector designed by Freepik</a>,
+                                    <a href="http://www.freepik.com/free-vector/bakery-shop-badges_774479.htm">Designed by Freepik</a>,
+
+                                    <a href="http://www.freepik.com/free-photos-vectors/cake">Cake vector designed by Freepik</a>,
+
+                                    <a href="http://www.freepik.com/free-photos-vectors/vintage">Vintage vector designed by Freepik</a></li>
+
+                            </ul>
+
+                            <br>
+                            <br>
+
+
+                            <h4>Scripts</h4>
+
+                            <ul>
+                                <li>Revolution Slider <a target="_blank" href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848</a> - (Premium - Incuded with template, free license using inside Polo Template)</li>
+
+                                <li>Datetimepicker for Bootstrap 3 <a target="_blank" href="https://github.com/Eonasdan/bootstrap-datetimepicker/">https://github.com/Eonasdan/bootstrap-datetimepicker/</a></li>
+                                <li>FitVids <a target="_blank" href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+                                <li>Isotope <a target="_blank" href="http://isotope.metafizzy.co">http://isotope.metafizzy.co</a></li>
+                                <li>Flickr Feed <a target="_blank" href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin">http://www.newmediacampaigns.com/page/jquery-flickr-plugin</a></li>
+                                <li>jQuery <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+
+                                <li>jQuery Appear <a target="_blank" href="https://github.com/bas2k/jquery.appear/">https://github.com/bas2k/jquery.appear/</a></li>
+
+                                <li>Countdown <a target="_blank" href="http://keith-wood.name/countdown.html">http://keith-wood.name/countdown.html</a></li>
+
+                                <li>CountTo <a target="_blank" href="https://github.com/mhuggins/jquery-countTo">https://github.com/mhuggins/jquery-countTo</a></li>
+
+                                <li>Jquery Easing <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+
+                                <li>Easy pie chart <a target="_blank" href="http://github.com/rendro/easy-pie-chart/">http://github.com/rendro/easy-pie-chart/</a></li>
+
+                                <li>jQuery gMap 2 - Google Maps API V3 <a target="_blank" href="http://labs.mario.ec/jquery-gmap/">http://labs.mario.ec/jquery-gmap/</a></li>
+
+                                <li>Mb YTPlayer <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a></li>
+
+                                <li>Magnific Popup <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+
+
+                                <li>jQuery Mouse Wheel Plugin <a target="_blank" href="https://github.com/jquery/jquery-mousewheel">https://github.com/jquery/jquery-mousewheel</a></li>
+
+                                <li>multiScroll.js <a target="_blank" href="https://github.com/alvarotrigo/multiscroll.js">https://github.com/alvarotrigo/multiscroll.js</a></li>
+
+                                <li>Owl Carousel v2 <a target="_blank" href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a></li>
+
+                                <li>particles.js <a target="_blank" href="https://github.com/VincentGarreau/particles.js">https://github.com/VincentGarreau/particles.js</a></li>
+
+                                <li>Scrollify <a target="_blank" href="http://projects.lukehaas.me/scrollify/">http://projects.lukehaas.me/scrollify/</a></li>
+
+                                <li>Simplr-smoothscroll <a target="_blank" href="https://github.com/simov/simplr-smoothscroll">https://github.com/simov/simplr-smoothscroll</a></li>
+
+                                <li>Stellar <a target="_blank" href="http://markdalgleish.com/projects/stellar.js">http://markdalgleish.com/projects/stellar.js</a></li>
+
+                                <li>Vegas Slideshow <a target="_blank" href="https://github.com/jaysalvat/vegas">https://github.com/jaysalvat/vegas</a></li>
+
+
+
+                                <li>Vide <a target="_blank" href="https://github.com/vodkabears/Vide/">https://github.com/vodkabears/Vide/</a></li>
+                                <li>jRespond <a target="_blank" href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a></li>
+                                <li>Moment.js <a target="_blank" href="https://github.com/moment/moment/">https://github.com/moment/moment/</a></li>
+                                <li>Morphext <a target="_blank" href="http://morphext.fyianlai.com/">http://morphext.fyianlai.com/</a></li>
+
+                                <li>Retina.js <a target="_blank" href="https://github.com/imulus/retinajs">https://github.com/imulus/retinajs</a></li>
+
+                                <li>jQuery Form Plugin <a target="_blank" href="http://jquery.malsup.com/form/#getting-started">http://jquery.malsup.com/form/</a></li>
+
+                                <li>Bootstrap validator <a target="_blank" href="http://1000hz.github.io/bootstrap-validator/">http://1000hz.github.io/bootstrap-validator/</a></li>
+
+                                <li>Let it snow
+                                    <a href="http://www.jqueryscript.net/animation/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow.html"></a>http://www.jqueryscript.net/animation/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow.html</li>
+
+
+                            </ul>
+                            <br>
+                            <br>
+
+                            <h4>CSS & Fonts</h4>
+                            <ul>
+                                <li>Bootstrap Framework <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                                <li>Animation <a target="_blank" href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a></li>
+                                <li>Font Awesome <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+                                <li>Google Fonts <a target="_blank" href="https://www.google.com/fonts">https://www.google.com/fonts</a></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <h4>PHP</h4>
+
+                            <ul>
+                                <!--<li>Mailchimp <a target="_blank" href="http://mailchimp.com/">http://mailchimp.com/</a></li>-->
+                                <li>PHP Mailer <a target="_blank" href="https://github.com/PHPMailer/PHPMailer/">https://github.com/PHPMailer/PHPMailer</a></li>
+                            </ul>
+
+
+
+                        </section>
+                        <section id="changelog">
+                            <h1>Changelog</h1>
+                            <h4>V1.3 <small>03 December 2015</small></h4>
+                            <ul>
+                                <li><strong>New Feature: </strong>Added new animated icon for resposnive menu</li>
+                                <li><strong>Update: </strong>Added new animated icon on mobile menu</li>
+                                <li><strong>Update: </strong>Fully functional contact form</li>
+                                <li><strong>Update: </strong>Documentation</li>
+                                <li><strong>BugFix: </strong>Side panel resposnive menu</li>
+                                <li><strong>BugFix: </strong>Smooth scrolling issue fixed on IOS devices</li>
+                                <li><strong>BugFix: </strong>Fixed preloader issue</li>
+                                <li><strong>BugFix: </strong>Some other minor fixes</li>
+                            </ul>
+                            <hr>
+                            <h4>V1.2 <small>28 Noveber 2015</small></h4>
+                            <ul>
+                                <li><strong>BugFix: </strong>Minor bug fixes</li>
+                            </ul>
+                            <hr>
+                            <h4>V1.1 <small>28 Noveber 2015</small></h4>
+                            <ul>
+                                <li><strong>BugFix: </strong>Minor bug fixes</li>
+                            </ul>
+                            <hr>
+                            <h4>V1.0 <small>27 Noveber 2015</small></h4>
+                            <p>Initial Release</p>
+
+
+
+
+
+
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <div id="footer-wrapper">
+        <div class="container" id="footer">
+            <div class="links">
+                <!--			<a target="_blank" href="http://forum.inspiro-themes.com">Support Forum</a>-->
+                <a target="_blank" href="http://support.inspiro-media.com">Support Center</a>
+                <a target="_blank" href="https://youtube.com/inspiromedia/videos">Video Tutorials</a>
+                <a href="#changelog">Template Changelog</a>
+                <a target="_blank" href="http://inspirothemes.com/polo/preview">View Template Demo</a>
+            </div>
+            <p id="copyright">Copyright 2015 | INSPIRO</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
